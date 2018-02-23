@@ -36,8 +36,8 @@ public class Main {
             PrintWriter writer1 = new PrintWriter("postgre.sql", "UTF-8");
             writer1.println(create_sql);
             for (int i = 1; i < 1001; i++) {
-                writer1.println("INSERT INTO test VALUES ( "+i+"," +
-                        "'The first line '" +i+"',"+
+                writer1.println("INSERT INTO test (id, field_1, field_2, field_3, field_4, field_5, field_6, field_7, field_8, field_9, field_10) VALUES ( "+i+"," +
+                        "'The first line " +i+"',"+
                         " 'The second line " + i + "'," +
                         " 'The third line " + i +"'," +
                         i + "," +
